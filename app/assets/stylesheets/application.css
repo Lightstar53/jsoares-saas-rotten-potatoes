@@ -55,6 +55,9 @@ table#movies th, table#movies td {
   padding: 4px;
   text-align: left;
 }
+table#movies tr:hover {
+  background-color: wheat;
+}
 #notice #warning {
   background: rosybrown;
   margin: 1em 0;
