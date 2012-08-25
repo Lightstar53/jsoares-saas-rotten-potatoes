@@ -33,6 +33,13 @@ h1.title {
   font-size: 2em;
   font-style: normal;
 }
+h1.title a {
+  color: white;
+  text-decoration: none;
+}
+h1.title a:hover {
+  text-decoration: underline;
+}
 table#movies {
   margin: 10px;
   border-collapse: collapse;
