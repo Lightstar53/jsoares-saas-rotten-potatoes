@@ -60,6 +60,10 @@ table#movies th, table#movies td {
   margin: 1em 0;
   padding: 4px;
 }
+.message#notice {
+  background: green;
+  color: white;
+}
 form label {
   display: block;
   line-height: 25px;
