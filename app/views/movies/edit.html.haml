@@ -13,6 +13,9 @@
   = label :movie, :release_date, 'Released On'
   = date_select :movie, :release_date, :start_year => 1930, :end_year => Time.now.year
 
+  = label :movie, :description, "Description"
+  = text_area :movie, 'description', :rows => 5, :cols => 50
+
   = submit_tag 'Update Movie Info'
 
 %p= link_to 'Back to movie info', movie_path(@movie)
