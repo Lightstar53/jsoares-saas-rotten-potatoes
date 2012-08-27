@@ -1,0 +1,19 @@
+= form_for movie do |f|
+
+  = f.label :title
+  = f.text_field 'title'
+
+  = f.label :rating
+  = f.select :rating, ['G','PG','PG-13','R','NC-17']
+
+  = f.label :release_date
+  = f.date_select :release_date, :start_year => 1930, :end_year => Time.now.year
+
+  = f.label :description
+  = f.text_area :description, :rows => 5, :cols => 50
+
+  = f.submit
+
+  - if movie.id
+    %p= link_to 'Back to movie info', movie_path(@movie)
+  %p= link_to 'Back to movies list', movies_path
