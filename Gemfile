@@ -7,17 +7,21 @@ gem 'rails', '3.1.0'
 
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
-  gem 'cucumber-rails-training-wheels'
-  gem 'database_cleaner'
-  gem 'capybara'
-  gem 'launchy'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-cucumber'
+  gem 'libnotify'
   gem 'sqlite3'
   gem 'ruby-debug19', :require => 'ruby-debug'
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails-training-wheels'
   gem 'rspec-rails'
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'launchy'
 end
 
 group :production do
