@@ -47,3 +47,6 @@ gem 'jquery-rails'
 
 # To use debugger
 gem 'haml'
+
+# The ruby-tmdb gem
+gem 'ruby-tmdb'
