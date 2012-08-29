@@ -7,5 +7,5 @@ Scenario: Add a movie
   When I fill in "Title" with "Men In Black"
   And I select "PG-13" from "Rating"
   And I press "Create Movie"
-  Then I should be on that RottenPotatoes Movie page
+  Then I should be on the "Men In Black" Movie page
   And I should see "Men In Black"
