@@ -6,8 +6,13 @@ class Movie < ActiveRecord::Base
     'a44453783e4b756d1f207d0ed27c840c' # replace with my own Tmdb key asap
   end
 
+  def self.default_language
+    'en'
+  end
+
   def self.find_in_tmdb(string)
     Tmdb.api_key = self.api_key
+    Tmdb.default_language = self.default_language
     begin
       TmdbMovie.find(:title => string)
     rescue ArgumentError => tmdb_error
