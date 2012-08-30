@@ -3,7 +3,7 @@ class Movie < ActiveRecord::Base
   class Movie::InvalidKeyError < StandardError ; end
 
   def self.api_key
-    'cc4b67c52acb514bdf4931f7cedfd12b' # replace with my own Tmdb key asap
+    'a44453783e4b756d1f207d0ed27c840c' # replace with my own Tmdb key asap
   end
 
   def self.find_in_tmdb(string)
